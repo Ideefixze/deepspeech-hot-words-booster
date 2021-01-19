@@ -2,9 +2,9 @@
 Testing of different boost values for hot-words in Mozilla's STT: Deepspeech.
 
 # How to use?
-Run using ```python 3.9```, while having a ```deepspeech``` installed. This works from version 0.9.0 since it was the version that added this feature.
+Run using `python 3.9`, while having a `deepspeech` installed. This works from version 0.9.0 since it was the version that added this feature.
 Example of an input after you run this script:
-```
+`
 audio/filename.wav
 hot
 cold
@@ -12,10 +12,12 @@ cold
 -100
 100
 3
-```
+`
 This tests combinations of hot-words: 'hot' and 'cold' on audiofile 'filename.wav'
 Using prios/boost values from range [-100;100] by doing 3 steps: [-100, 0, 100]
 You can add up as many hot-words as you want. '?' is used as a end of an hot-words input.
+
+There are default test cases prepared from which conclusions below were taken in file: `testcases.txt`
 
 # Analysis
 
@@ -24,7 +26,9 @@ You can add up as many hot-words as you want. '?' is used as a end of an hot-wor
 This script was used in analyzing current state of hot-words feature in Mozilla's STT. 
 Original post on Mozilla's Forum: ![here](https://discourse.mozilla.org/t/practical-tests-of-hot-word-feature-and-default-models-accuracy/73855/4)
 
-## Conclusions
+The feature itself is still a small mystery for the Deepspeech community. The exploratory testing was made in order to create an overall strategy in using hot-words in practice.
+
+## Conclusions (19.01.2021, Deepspeech 0.9.3)
 
 - Adding hot-word that has a space, like: “another one” doesn’t change behavior. Probably because it doesn’t appear in word detection mechanism and is not modified.
 
