@@ -38,17 +38,23 @@ def test_file(filename, hotwords, min_prio, max_prio, prio_steps):
 # using prios from range [-100;100] by doing 3 steps: [-100, 0, 100]
 # You can add up as many hot-words as you want. '?' is used as a end of an hot-words input.
 if __name__ == '__main__':
-    filename = input()
-    hotwords = []
-    p = input()
-    while (p !="?"):
-        hotwords.append(p)
-        p = input()
-    min_prio = float(input())
-    max_prio = float(input())
-    prio_steps = int(input())
 
-    if(min_prio>=max_prio):
-        print("Error: min_prio can't be bigger than max_prio.")
-    else:
-        test_file(filename, hotwords, min_prio, max_prio, prio_steps)
+    while(True):
+        filename = input()
+
+        if(filename=="END"):
+            exit()
+
+        hotwords = []
+        p = input()
+        while (p !="?"):
+            hotwords.append(p)
+            p = input()
+        min_prio = float(input())
+        max_prio = float(input())
+        prio_steps = int(input())
+
+        if(min_prio>=max_prio):
+            print("Error: min_prio can't be bigger than max_prio.")
+        else:
+            test_file(filename, hotwords, min_prio, max_prio, prio_steps)
