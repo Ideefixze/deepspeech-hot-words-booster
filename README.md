@@ -1,5 +1,5 @@
 # deepspeech-hot-words-booster
-Testing of different boost values for hot-words in Mozilla's STT: Deepspeech.
+Testing of different boost values for hot-words in Mozilla's STT: DeepSpeech.
 
 # How to use?
 Run using `python 3.9`, while having a `deepspeech` installed. This works from version 0.9.0 since it was the version that added this feature.
@@ -30,7 +30,7 @@ Those audio files are used according to the "Fair use" law: for nonprofit educat
 This script was used in analyzing current state of hot-words feature in Mozilla's STT. 
 Original post on Mozilla's Forum: ![here](https://discourse.mozilla.org/t/practical-tests-of-hot-word-feature-and-default-models-accuracy/73855/4)
 
-The feature itself is still a small mystery for the Deepspeech community. The exploratory testing was made in order to create an overall strategy in using hot-words in practice.
+The feature itself is still a small mystery for the DeepSpeech community. The exploratory testing was made in order to create an overall strategy in using hot-words in practice.
 
 ## Conclusions (19.01.2021, Deepspeech 0.9.3)
 
