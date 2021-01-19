@@ -46,7 +46,7 @@ The feature itself is still a small mystery for the Deepspeech community. The ex
 
 - Words that share no similarity to the given hot-word cause no change if the audio doesn’t include the sound of that word. 
 
-- No change in transcription was found while a hot-words were an extension of a transcribed word. E.g.: 'knowledge' as hot-word didn't change 'know' to any other word in the transcription.
+- No change in transcription was found while a hot-words were an "extension" of a transcribed word. E.g.: 'knowledge' as hot-word didn't change 'know' to any other word in the transcription. Closer similarity may change it though. Change is more noticable on words that share similarity on their prefix rather than suffix.
 
 - No software related errors caused by adding, removing, clearing hot-words were detected.
 
