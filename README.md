@@ -19,6 +19,9 @@ Using prios/boost values from range [-100;100] by doing 3 steps: [-100, 0, 100]
 You can add up as many hot-words as you want. '?' is used as a end of an hot-words input.
 
 There are default test cases prepared from which conclusions below were taken in file: `testcases.txt`
+These test cases are different from files used in original docs (see link below), but the conclusions from those test cases are the same.
+
+Those audio files are used according to the "Fair use" law: for nonprofit educational and scientific usage.
 
 # Analysis
 
