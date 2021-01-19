@@ -12,6 +12,7 @@ cold
 -100
 100
 3
+END
 ```
 This tests combinations of hot-words: 'hot' and 'cold' on audiofile 'filename.wav'
 Using prios/boost values from range [-100;100] by doing 3 steps: [-100, 0, 100]
