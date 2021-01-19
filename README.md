@@ -2,7 +2,11 @@
 Testing of different boost values for hot-words in Mozilla's STT: DeepSpeech.
 
 # How to use?
-Run using `python 3.9`, while having a `deepspeech` installed. This works from version 0.9.0 since it was the version that added this feature.
+Run using `python 3.9`, while having a `deepspeech` installed.
+
+Put files: `model.pbmm` and `scorer.scorer` in the same directory so this script can load up model and a scorer correctly.
+
+This works from version 0.9.0 since it was the version that added this feature.
 Example of an input after you run this script:
 ```
 audio/filename.wav
