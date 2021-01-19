@@ -42,7 +42,9 @@ The feature itself is still a small mystery for the Deepspeech community. The ex
 
 - Usage hot-words for calibrating accuracy is not the perfect one but add a very small priority and it could work. The value is dependant on your audio, it could be big or small to see a difference, but no intuitive way of determining accuracy gain was found.
 
-- Nonexistent words as hot-words or words that share no similarity to the given hot-word cause no change if the audio doesn’t include the sound of that word. 
+- Nonexistent words cause no change in the transcription.
+
+- Words that share no similarity to the given hot-word cause no change if the audio doesn’t include the sound of that word. 
 
 - No change in transcription was found while a hot-words were an extension of a transcribed word. E.g.: 'knowledge' as hot-word didn't change 'know' to any other word in the transcription.
 
