@@ -4,7 +4,7 @@ Testing of different boost values for hot-words in Mozilla's STT: Deepspeech.
 # How to use?
 Run using `python 3.9`, while having a `deepspeech` installed. This works from version 0.9.0 since it was the version that added this feature.
 Example of an input after you run this script:
-`
+```
 audio/filename.wav
 hot
 cold
@@ -12,7 +12,7 @@ cold
 -100
 100
 3
-`
+```
 This tests combinations of hot-words: 'hot' and 'cold' on audiofile 'filename.wav'
 Using prios/boost values from range [-100;100] by doing 3 steps: [-100, 0, 100]
 You can add up as many hot-words as you want. '?' is used as a end of an hot-words input.
