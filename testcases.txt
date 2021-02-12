@@ -1,93 +1,20 @@
-audio/seuss.wav
-knowledge
-?
--10000
-10000
-11
-audio/seuss.wav
-bad
-?
--10
-30
-11
-audio/seuss.wav
-at
-?
--30
-30
-16
-audio/seuss.wav
-sad
-glad
-bad
-?
--10
-10
-3
-audio/gates1.wav
-wear
-?
--100
-100
-11
-audio/gates1.wav
-nuclear war
-?
--100
-100
-11
-audio/gates2.wav
-feel
-well
-?
--50
-50
-11
-audio/gates2.wav
-wheel
-?
--25
-25
-5
-audio/kalel.wav
-another
-?
--25
-25
-6
-audio/kalel.wav
-other
-another
-nither
-?
--10
-0
-4
-audio/kalel.wav
-ones
-?
--50
-50
-11
-audio/kalel.wav
-an
-?
--50
-50
-11
-audio/kalel.wav
-other
-?
--30
-30
-21
-audio/kalel.wav
-there
-?
--50
-50
-11
-END
+hotwords_adjusting.py --model model.pbmm --scorer scorer.scorer --audio audio/seuss.wav --min -1000.0 --max 1000.0 --steps 11 --hot_words knowledge
+hotwords_adjusting.py --model model.pbmm --scorer scorer.scorer --audio audio/seuss.wav --min -100.0 --max 100.0 --steps 11 --hot_words bad
+hotwords_adjusting.py --model model.pbmm --scorer scorer.scorer --audio audio/seuss.wav --min -30.0 --max 30.0 --steps 6 --hot_words at
+hotwords_adjusting.py --model model.pbmm --scorer scorer.scorer --audio audio/seuss.wav --min -10.0 --max 10.0 --steps 3 --hot_words bad,that,sad,glad
+
+hotwords_adjusting.py --model model.pbmm --scorer scorer.scorer --audio audio/gates1.wav --min -100.0 --max 100.0 --steps 11 --hot_words wear
+hotwords_adjusting.py --model model.pbmm --scorer scorer.scorer --audio audio/gates1.wav --min -100.0 --max 100.0 --steps 11 --hot_words "nuclear war"
+hotwords_adjusting.py --model model.pbmm --scorer scorer.scorer --audio audio/gates1.wav --min -50.0 --max 50.0 --steps 11 --hot_words feel,well
+hotwords_adjusting.py --model model.pbmm --scorer scorer.scorer --audio audio/gates1.wav --min -25.0 --max 25.0 --steps 6 --hot_words wheel
+
+hotwords_adjusting.py --model model.pbmm --scorer scorer.scorer --audio audio/kalel.wav --min -25.0 --max 25.0 --steps 6 --hot_words another
+hotwords_adjusting.py --model model.pbmm --scorer scorer.scorer --audio audio/kalel.wav --min -10.0 --max 0.0 --steps 4 --hot_words another,nither,other
+hotwords_adjusting.py --model model.pbmm --scorer scorer.scorer --audio audio/kalel.wav --min -50.0 --max 50.0 --steps 11 --hot_words ones
+hotwords_adjusting.py --model model.pbmm --scorer scorer.scorer --audio audio/kalel.wav --min -50.0 --max 50.0 --steps 11 --hot_words an
+hotwords_adjusting.py --model model.pbmm --scorer scorer.scorer --audio audio/kalel.wav --min -30.0 --max 30.0 --steps 21 --hot_words other
+hotwords_adjusting.py --model model.pbmm --scorer scorer.scorer --audio audio/kalel.wav --min -50.0 --max 50.0 --steps 11 --hot_words there
+
 
 
 

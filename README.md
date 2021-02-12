@@ -7,16 +7,9 @@ Run using `python 3.9`, while having a `deepspeech` installed.
 Put files: `model.pbmm` and `scorer.scorer` in the same directory so this script can load up model and a scorer correctly.
 
 This works from version 0.9.0 since it was the version that added this feature.
-Example of an input after you run this script:
+Example of usage:
 ```
-audio/filename.wav
-hot
-cold
-?
--100
-100
-3
-END
+hotwords_adjusting.py --model model.pbmm --scorer.scorer --audio audio/filename.wav --min -100.0 --max 100.0 --steps 3 --hot_words hot,cold
 ```
 This tests combinations of hot-words: 'hot' and 'cold' on audiofile 'filename.wav'
 Using prios/boost values from range [-100;100] by doing 3 steps: [-100, 0, 100]
