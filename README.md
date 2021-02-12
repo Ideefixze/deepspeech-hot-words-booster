@@ -49,5 +49,5 @@ The feature itself is still a small mystery for the DeepSpeech community. The ex
 
 ## Documentation
 
-Those findings would be soon added to the official Deepspeech documentation.
+Those findings would be soon added to the official DeepSpeech documentation.
 
